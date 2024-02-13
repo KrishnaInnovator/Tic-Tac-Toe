@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div h1 {
+    position: relative;
+    top:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    color: rgb(209, 170, 246);
+}
+
+.container {
+    display: grid;
+    width: 539px;
+    height: 70vh;
+    gap: 12px;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.items { 
+    border-radius: 15px;  
+    box-shadow: -10px 10px 10px 0px rgba(245, 245, 245, 0.489);
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgb(164, 55, 55);
+    background-color: aliceblue;
+}
+.items:hover{
+    background-color: rgb(233, 228, 220);
+}
+
+.items:active {
+    background-color: rgb(249, 249, 249);
+    transition: all 0.2s;
+}
+
+
+@media (max-width:555px) {
+    .container {
+        display: grid;
+        width: 339px;
+        height: 40vh;
+        gap: 0.5em;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .items{
+        font-size: 60px;
+    }
+    .msg_contain p{
+        font-size: 10px;
+        text-align: center;
+       
+    }
+}
+#reset-btn{
+    position: relative;
+    bottom: 20px;
+    padding:10px 20px 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    background-color: rgb(209, 170, 246);
+}
+#reset-btn:active{
+    background-color: rgb(200, 217, 232);
+}
+#new-btn{
+     
+    padding:10px 20px 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    background-color: rgb(209, 170, 246);
+}
+#new-btn:active{
+    background-color: rgb(200, 217, 232);
+}
+.msg_contain{
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ gap:1rem;
+
+}
+.msg_contain p{
+    margin-top: 20px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 30px;
+font-weight: 700;
+color: rgb(132, 0, 255);
+}
+.hide{
+    display:none ;
+   
+}
